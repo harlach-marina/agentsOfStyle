@@ -1,0 +1,116 @@
+<!-- <ion-side-menus>
+
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Back</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-right-left"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="right">
+    <div class="bar bar-header bar-assertive">
+      <h1 class="title">TITLE</h1>
+    </div>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item menu-close href="#">
+          HOME
+        </ion-item>
+        <ion-item menu-close href="#/app/search">
+          MY ACCOUNT
+        </ion-item>
+        <ion-item menu-close href="#/app/browse">
+          CREATE A NEW OUTFIT
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+</ion-side-menus> -->
+
+
+<!-- <ion-header-bar>
+  <h1 class="title">My Sample App</h1>
+</ion-header-bar>
+<ion-content padding="true">
+  <button class="button button-block" ng-click="openAlert()">Alert me!</button>
+  My geolocation: <br /> 
+  Latitude: {{position.coords.latitude}} <br /> 
+  Longitude: {{position.coords.longitude}} <br />
+  Altitude: {{position.coords.altitude}} <br />
+  Accuracy: {{position.coords.accuracy}} <br />
+  Altitude Accuracy: {{position.coords.altitudeAccuracy}} <br />
+  Heading: {{position.coords.heading}} <br />
+  Speed: {{position.coords.speed}} <br />
+  Timestamp: {{position.timestamp}} <br />
+</ion-content> -->
+
+<!-- <ion-header-bar align-title="center" class="bar-assertive">
+  <div class="buttons">
+    <button class="button">Left Button</button>
+  </div>
+  <h1 class="title">Title!</h1>
+  <div class="buttons">
+    <button class="button">Right Button</button>
+  </div>
+</ion-header-bar> -->
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <ion-side-menu-content>
+
+    <ion-nav-bar class="bar-assertive">
+
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <!--
+      Use primary and secondary, so buttons correctly map to the side familiar to users of each platform.
+      ion-nav-buttons must be immediate descendants of the ion-view or ion-nav-bar element
+      (basically, don't wrap it in another div).
+      -->
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="right"></button>
+      </ion-nav-buttons>
+
+    </ion-nav-bar>
+
+    <ion-nav-view  name="menuContent" animation="slide-right-left">
+      <ion-content class="has-header has-footer">
+        <h1>Some content!</h1>
+      </ion-content>
+    </ion-nav-view>
+
+  </ion-side-menu-content>
+
+  <ion-side-menu side="right" class="assertive-bg side-menu-text">
+    <ion-header-bar class="bar-assertive">
+      <!-- <h1 class="title">Menu</h1> -->
+    </ion-header-bar>
+    <ion-content class="has-header text-center">
+      <ion-list>
+        <ion-item class="item-assertive" menu-close ui-sref="app.search">
+          Home
+        </ion-item>
+        <ion-item class="item-assertive" menu-close ui-sref="app.browse">
+          My account
+        </ion-item>
+        <ion-item class="item-assertive" menu-close ui-sref="app.playlists">
+          Create a new outfit
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
+
+<!-- <ion-content class="has-header has-footer">
+
+  <h1>Some content!</h1>
+</ion-content> -->
+<!-- <ion-footer-bar align-title="left" class="bar-assertive">
+  <div class="buttons">
+    <button class="button">Left Button</button>
+  </div>
+  <h1 class="title">Title!</h1>
+  <div class="buttons" ng-click="doSomething()">
+    <button class="button">Right Button</button>
+  </div>
+</ion-footer-bar> -->

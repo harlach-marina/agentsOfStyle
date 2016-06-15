@@ -1,0 +1,33 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-assertive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="right"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view  name="menuContent">
+    </ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="right" class="assertive-bg side-menu-text">
+    <ion-header-bar class="bar-assertive">
+    </ion-header-bar>
+    <ion-content class="has-header text-center">
+      <ion-list>
+        <ion-item class="item-assertive" menu-close ng-click="login()">
+          Home
+        </ion-item>
+        <ion-item class="item-assertive" menu-close href="#/app/search">
+          My account
+        </ion-item>
+        <ion-item class="item-assertive" menu-close href="#/app/browse">
+          Create a new outfit
+        </ion-item>
+        <ion-item class="item-assertive" menu-close href="#/app/playlists">
+          Playlists
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
